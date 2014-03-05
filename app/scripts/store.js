@@ -1,0 +1,1 @@
+FireEmberConnect.ApplicationAdapter = DS.FixtureAdapter;
