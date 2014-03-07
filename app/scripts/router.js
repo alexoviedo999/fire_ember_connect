@@ -1,3 +1,8 @@
 FireEmberConnect.Router.map(function () {
-  // Add your routes here
+  this.resource('users', function(){
+    this.resource('user', { path:'/:user_id' }, function(){
+      this.route('edit');
+    });
+    this.route('create');
+  });
 });
