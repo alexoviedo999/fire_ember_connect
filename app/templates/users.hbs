@@ -3,6 +3,7 @@
     <li>
       {{#link-to "user" user}}
         {{user.name}}
+        <button {{action 'edit' this}}>Edit</button>
       {{/link-to}}
     </li>
   {{/each}}
@@ -10,3 +11,6 @@
 {{outlet}}
 
 </ul>
+  <script type="text/x-handlebars" data-template-name="user/edit">
+   {{input valueBinding="user.name"}}
+  </script>
